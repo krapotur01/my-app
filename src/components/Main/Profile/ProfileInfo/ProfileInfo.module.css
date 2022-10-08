@@ -1,0 +1,54 @@
+.img {
+    background-image: url(./../../../../../public/img/profile.jpeg);
+    background-size: 110px 110px;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    border-radius: 60px;
+    bottom: 0px;
+    right: 10px;
+}
+
+.profile_info {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.contain {
+    font-size: 0;
+    align-self: flex-end;
+    margin-top: 10px;
+}
+
+.button {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 5px 10px;
+    border: none;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.main_info {
+    border: none;
+    text-decoration: none;
+    background-color: black;
+}
+
+.my_project {
+    color: #fff;
+    border-radius: 20px 0 0 20px;
+}
+
+.write_me {
+    background-color: #fff;
+    border-radius: 0 20px 20px 0;
+}

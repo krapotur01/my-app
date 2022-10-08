@@ -1,0 +1,9 @@
+.footer {
+    display: flex;
+    background: linear-gradient(to left, #8314d8 , #577fce);
+    width: 100%;
+	height: 80px;
+    padding-top: 20px;
+    margin-top: 10px;
+    flex: 0 0 auto;
+}

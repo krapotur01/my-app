@@ -1,0 +1,62 @@
+.dialog_items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dialogs_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.dialogs {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.messages {
+    width: 40%;
+    display: flex;
+    flex-direction: column;  
+}
+
+.item {
+    list-style: none;
+}
+
+.textarea_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.button {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 5px 10px;
+    border: none;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border: none;
+    text-decoration: none;
+    background-color: black;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.button:hover {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}

@@ -1,0 +1,22 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    gap: 20px;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.item {
+    list-style-type: none;
+    gap: 5px;
+    padding: 0 5px 5px;
+    width: 90px;
+    border-radius: 0 0 15px 0;
+    border-right: black 1px solid;
+    border-bottom: black 1px solid;
+}

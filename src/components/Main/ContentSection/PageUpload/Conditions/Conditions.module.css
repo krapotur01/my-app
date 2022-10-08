@@ -1,0 +1,27 @@
+.conditions {
+    width: 100%;
+    margin-top:10px;
+}
+
+.paragraph {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+}
+
+.list {
+    margin-top: 12px;
+    margin-left: 23px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.item {
+    font-size: 15px;
+    line-height: 22px;
+    list-style-type: none;
+    background: url(./../../../../../../public/img/red-disc.svg) no-repeat 0.5rem;
+    background-position: 0px 7px;
+    padding: 0px 15px;
+}

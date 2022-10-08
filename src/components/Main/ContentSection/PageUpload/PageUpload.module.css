@@ -1,0 +1,11 @@
+.pageUpload {
+    max-width: 868px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 880px) {
+    .pageUpload {
+      margin: 0 10px;
+    }
+}

@@ -1,0 +1,29 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.bottom {
+    display: flex;
+    background: linear-gradient(to left, #9051c0 , #8CA6DB);
+    width: 100%;
+    justify-content: flex-end;
+    padding: 5px;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+}
+
+.submit {
+    margin-right: 20px;
+}

@@ -1,0 +1,13 @@
+.info {
+    width: 100%;
+    margin-top: 23px;
+    border: 2px solid #EC1630;
+    background-color: #EEE;
+}
+
+.paragraph {
+    margin: 10px;
+    font-weight: 300;
+    font-size: 9px;
+    line-height: 12px;
+}

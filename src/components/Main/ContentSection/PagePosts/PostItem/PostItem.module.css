@@ -1,0 +1,33 @@
+.post_block {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 200px auto;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    border-right: black 1px solid;
+    border-bottom: black 1px solid;
+    width: 200px;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;    
+    border-radius: 160px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    word-break: break-all;
+}
+
+.post {
+
+ 
+}

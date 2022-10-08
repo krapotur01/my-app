@@ -1,0 +1,16 @@
+.header {
+    position: relative;
+    background: linear-gradient(to left, #8314d8 , #8CA6DB);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 20px;
+    top: 5px;
+}
