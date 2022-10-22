@@ -1,0 +1,46 @@
+.posts_block {
+    margin: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.textarea_block {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.button {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 5px 10px;
+    border: none;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border: none;
+    text-decoration: none;
+    background-color: black;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.button:hover {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;    
+    border-radius: 160px;
+}

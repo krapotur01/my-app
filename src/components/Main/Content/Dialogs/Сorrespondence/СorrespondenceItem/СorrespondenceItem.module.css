@@ -1,0 +1,52 @@
+.dialogs__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.img_follow_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100px;
+}
+
+.follow {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 5px 10px;
+    border: none;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border: none;
+    text-decoration: none;
+    background-color: black;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.follow:hover {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.message_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.message_main {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 500px;
+    max-width: 600px;
+}
+
+.location {
+    min-width: 100px;
+}

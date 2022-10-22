@@ -1,13 +1,13 @@
 import React from "react";
-import main from './Main.module.css';
-import Content from "./ContentSection/Content.jsx";
-import Profile from "./Profile/Profile.jsx";
+import styles from './Main.module.css';
+import Content from "./Content/Content.jsx";
+import ProfileSection from "./ProfileSection/ProfileSection.jsx";
 
-const Main = (props) => {
+const Main = () => {
     return (
-        <main className={main.main}>
-            <Profile /> 
-            <Content store={props.store} /> 
+        <main className={styles.main}>
+            <ProfileSection /> 
+            <Content /> 
         </main>
     )
 }

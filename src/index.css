@@ -7,8 +7,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-y: scroll;
-  background: #B993D6;
-  background: linear-gradient(to left, #B993D6 , #8CA6DB);
+  background: #a890ba;
 }
 
 code {
