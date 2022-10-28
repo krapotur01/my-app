@@ -1,12 +1,12 @@
 import "./App.css";
-import Header from "./components/Header/Header.jsx";
+import HeaderContainer from "./components/Header/HeaderContainer.jsx";
 import Main from "./components/Main/Main.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 
 const App = () => {
   return (
     <div className="page">
-      <Header />
+      <HeaderContainer />
       <Main />
       <Footer />
     </div>

@@ -7,6 +7,7 @@ import СorrespondenceContainer from './Dialogs/Сorrespondence/СorrespondenceC
 import PostsContainer from './Posts/PostsContainer';
 import ProfileContainer from './Profile/ProfileContainer';
 import UsersContainer from './Users/UsersContainer';
+import Login from './Login/Login';
 
 const Content = () => {
     return (
@@ -15,9 +16,11 @@ const Content = () => {
                 <Route path="/pageupload/*" element={<PageUpload />} />
                 <Route path="/dialogs/*" element={<DialogsContainer />} />
                 <Route path="/posts/*" element={<PostsContainer />} />
-                <Route path="/profile/*" element={<ProfileContainer />} />
+                <Route path="/profile/:userId" element={<ProfileContainer />} />
+                <Route path='/profile/' element={<ProfileContainer />} />
                 <Route path="/correspondence" element={<СorrespondenceContainer />} />
                 <Route path="/users" element={<UsersContainer />} />
+                <Route path="/login" element={<Login />} />
             </Routes>
         </div>
     )

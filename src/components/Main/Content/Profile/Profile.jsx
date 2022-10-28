@@ -8,7 +8,7 @@ const Profile = (props) => {
         return <Preloader />
     }
 
-    const postRender = props.profileData.map(el => <PostItem id={el.id} key={el.id} likeCount={el.likeCount} name={el.name} text={el.text} />)
+    const postRender = props.profileData.map(el => <PostItem id={el.id} key={el.id} likeCount={el.likeCount} text={el.text} />)
 
     const onAddPostClick = () => {
         props.addPost();
@@ -21,14 +21,17 @@ const Profile = (props) => {
 
     return (  
         <div className={styles.posts_block}>
+            <div className="profileInfo">
                 <img src={props.profile.photos.large} alt="Аватар" className={styles.avatar} />
-                <div className={styles.textarea_block}>
-                    <textarea onChange={onPostChange} placeholder='введите сообщение' value={props.newPostText} />
-                    <button onClick={onAddPostClick} className={styles.button}>написать</button>
-                </div>
-                <section className={styles.posts}>
-                    { postRender }
-                </section>
+                <p className="profileFullName">{props.profile.fullName}</p>
+            </div>
+            <div className={styles.textarea_block}>
+                <textarea onChange={onPostChange} placeholder='введите сообщение' value={props.newPostText} />
+                <button onClick={onAddPostClick} className={styles.button}>написать</button>
+            </div>
+            <section className={styles.posts}>
+                { postRender }
+            </section>
         </div>
     )
 }

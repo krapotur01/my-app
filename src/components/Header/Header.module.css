@@ -1,16 +1,18 @@
 .header {
-    position: relative;
     background: linear-gradient(to left, #8314d8 , #8CA6DB);
     height: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .logo {
     width: 40px;
     height: 40px;
-    position: absolute;
-    left: 20px;
-    top: 5px;
+    margin-left: 20px;
+}
+
+.loginBlock  {
+    margin-right: 20px;
 }

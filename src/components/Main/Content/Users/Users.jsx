@@ -4,6 +4,7 @@ import styles from './Users.module.css';
 import avatar from './../../../../assets/images/avatar.png';
 
 const Users = (props) => {
+
     let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize);
     let pages = [];
     let curP = props.currentPage;
@@ -18,7 +19,7 @@ const Users = (props) => {
         <div className={styles.users_page}>
             <ul className={styles.selectedPage_block}>
                 { slicedPages.map(el => {
-                    return <li onClick={(evt) => {props.onPageChanged(el)}} className={`${props.currentPage === el && styles.selectedPageActive} ${styles.selectedPage}`}>{el}</li>
+                    return <li key={el} onClick={(evt) => {props.onPageChanged(el)}} className={`${props.currentPage === el && styles.selectedPageActive} ${styles.selectedPage}`}>{el}</li>
                 })}
             </ul>
             <div className={styles.dialogs}>
@@ -29,8 +30,11 @@ const Users = (props) => {
                                 <img src={ el.photos.small != null ? el.photos.small : avatar } alt='Аватар' className={styles.avatar} />
                             </NavLink>
                             { el.followed
-                                ? <button onClick={() => {props.unfollow(el.id)}} className={styles.follow}>Follow</button> 
-                                : <button onClick={() => {props.follow(el.id)}} className={styles.follow}>Unfollow</button>}
+                                ? <button disabled={props.followingInProgress.some(id => id === el.id)} 
+                                    onClick={() => {props.unfollow(el.id)}} className={styles.follow}>Unfollow</button> 
+                                : <button disabled={props.followingInProgress.some(id => id === el.id)} 
+                                    onClick={() => {props.follow(el.id)}} className={styles.follow}>Follow</button>
+                            }
                         </div>
                         <div className={styles.message_block}>
                             <div className={styles.message_main}>
@@ -48,7 +52,6 @@ const Users = (props) => {
             </div>
         </div>
     )
-
 }
 
 export default Users;
