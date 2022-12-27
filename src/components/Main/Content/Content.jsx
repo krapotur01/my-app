@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import styles from './Content.module.css';
 import PageUpload from './PageUpload/PageUpload';
 import DialogsContainer from './Dialogs/DialogsContainer';
-import СorrespondenceContainer from './Dialogs/Сorrespondence/СorrespondenceContainer';
+import CorrespondenceContainer from './Dialogs/Correspondence/CorrespondenceContainer';
 import PostsContainer from './Posts/PostsContainer';
 import ProfileContainer from './Profile/ProfileContainer';
 import UsersContainer from './Users/UsersContainer';
@@ -17,8 +17,7 @@ const Content = () => {
                 <Route path="/dialogs/*" element={<DialogsContainer />} />
                 <Route path="/posts/*" element={<PostsContainer />} />
                 <Route path="/profile/:userId" element={<ProfileContainer />} />
-                <Route path='/profile/' element={<ProfileContainer />} />
-                <Route path="/correspondence" element={<СorrespondenceContainer />} />
+                <Route path="/correspondence" element={<CorrespondenceContainer />} />
                 <Route path="/users" element={<UsersContainer />} />
                 <Route path="/login" element={<Login />} />
             </Routes>

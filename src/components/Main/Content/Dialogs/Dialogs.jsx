@@ -7,15 +7,10 @@ const Dialogs = (props) => {
     const dialog = props.dialogs.map(el => <DialogsItem id={el.id} key={el.id} name={el.name} />);
     const message = props.messages.map(el => <MessageItem id={el.id} key={el.id} message={el.message} />);
 
-    const onSendMessageClick = () => {
-        props.sendMessage();
-    }
+    // const onSendMessage = (values) => {
+    //     props.sendMessage(values.newMessageBody);
+    // }
     
-    const onMessageChange = (event) => {
-        let text = event.target.value;
-        props.updateNewMessageBody(text);
-    }
-
     return (
         <div className={styles.dialog_items}>
             <div className={styles.dialogs_block}>
@@ -26,12 +21,20 @@ const Dialogs = (props) => {
                     { message }
                 </ul>
             </div>
-            <div className={styles.textarea_block}>
-                <textarea onChange={onMessageChange} placeholder='введите сообщение' value={props.newMessageBody} />
-                <button onClick={onSendMessageClick} className={styles.button}>написать</button>
-            </div>
+            {/* <DialogsReduxForm onSubmit={onSendMessage}/> */}
         </div>
     )
 }
+
+// const DialogsForm = props => {
+//     return (
+//         <form onSubmit={props.handleSubmit} className={styles.textarea_block}>
+//             {/* <Field name='newMessageBody' component='textarea' placeholder='введите сообщение' /> */}
+//             <button className={styles.button}>написать</button>
+//         </form>
+//     )
+// }
+
+// const DialogsReduxForm = reduxForm({form: 'newMessageBody'}) (DialogsForm)
 
 export default Dialogs;

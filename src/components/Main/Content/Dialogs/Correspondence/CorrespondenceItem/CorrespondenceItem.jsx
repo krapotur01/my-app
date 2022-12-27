@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from './СorrespondenceItem.module.css';
+import styles from './CorrespondenceItem.module.css';
 import avatar from './../../../../../../assets/images/avatar.png';
 
-const СorrespondenceItem = (props) => {
+const CorrespondenceItem = (props) => {
     return (
         <div className={styles.dialogs__item}>
             <div className={styles.img_follow_block}>
@@ -24,4 +24,4 @@ const СorrespondenceItem = (props) => {
     )
 }
 
-export default СorrespondenceItem;
+export default CorrespondenceItem;

@@ -1,4 +1,5 @@
 import { connect } from 'react-redux';
+import { compose } from 'redux';
 import { withAuthRedirect } from '../../../../hoc/withAuthRedirect';
 import Posts from './Posts.jsx';
 import { addPostAC, updateNewPostTextAC } from './../../../../redux/posts-reducer';
@@ -20,6 +21,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-let AuthRedirectComponent = withAuthRedirect(Posts);
-
-export default connect(mapStateToProps, mapDispatchToProps) (AuthRedirectComponent);
+export default compose(connect(mapStateToProps, mapDispatchToProps), withAuthRedirect) (Posts)

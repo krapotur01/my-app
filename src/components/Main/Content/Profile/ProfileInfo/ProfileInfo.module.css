@@ -1,0 +1,37 @@
+.profileInfo {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.imgPhotoName {
+
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;    
+    border-radius: 160px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.listInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.nameInfoColumn {
+    min-width: 100px;
+    font-weight: 700;
+}

@@ -1,10 +1,10 @@
 import React from 'react';
-import СorrespondenceItem from './СorrespondenceItem/СorrespondenceItem.jsx';
-import styles from './Сorrespondence.module.css';
+import CorrespondenceItem from './CorrespondenceItem/CorrespondenceItem';
+import styles from './Correspondence.module.css';
 
-const Сorrespondence = (props) => {
+const Correspondence = (props) => {
     const messageItemRender = props.messages.map(el => 
-        <СorrespondenceItem 
+        <CorrespondenceItem 
             userName={el.userName} 
             message={el.message} 
             date={el.date} 
@@ -33,4 +33,4 @@ const Сorrespondence = (props) => {
     )
 }
 
-export default Сorrespondence;
+export default Correspondence;

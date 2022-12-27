@@ -7,7 +7,7 @@ const listLinks1 = [
     { to: '/dialogs', value: 'Dialogs', id: 2 },
     { to: '/posts', value: 'Page Posts', id: 3 },
     { to: '/users', value: 'Users', id: 4 },
-    { to: '/profile', value: 'Profile', id: 5 },
+    { to: '/profile/26405', value: 'Profile', id: 5 },
     { to: '/element3', value: 'Элемент 3', id: 6 }
 ]
 

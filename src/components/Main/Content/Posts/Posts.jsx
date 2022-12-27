@@ -16,13 +16,13 @@ const Posts = (props) => {
 
     return (  
         <div className={styles.posts_block}>
-                <div className={styles.textarea_block}>
-                    <textarea onChange={onPostChange} placeholder='введите сообщение' value={props.newPostText} />
-                    <button onClick={onAddPostClick} className={styles.button}>написать</button>
-                </div>
-                <section className={styles.posts}>
-                    { postRender }
-                </section>
+            <div className={styles.textarea_block}>
+                <textarea onChange={onPostChange} placeholder='введите сообщение' value={props.newPostText} />
+                <button onClick={onAddPostClick} className={styles.button}>написать</button>
+            </div>
+            <section className={styles.posts}>
+                { postRender }
+            </section>
         </div>
     )
 }

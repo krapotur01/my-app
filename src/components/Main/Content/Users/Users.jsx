@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from './Users.module.css';
-import avatar from './../../../../assets/images/avatar.png';
+import noAvatar from './../../../../assets/images/avatar.png';
 
 const Users = (props) => {
 
@@ -27,7 +27,7 @@ const Users = (props) => {
                     <div key={el.id} className={styles.dialogs__item}>
                         <div className={styles.img_follow_block}>
                            <NavLink to={'/profile/' + el.id}>
-                                <img src={ el.photos.small != null ? el.photos.small : avatar } alt='Аватар' className={styles.avatar} />
+                                <img src={ el.photos.small != null ? el.photos.small : noAvatar } alt='Аватар' className={styles.avatar} />
                             </NavLink>
                             { el.followed
                                 ? <button disabled={props.followingInProgress.some(id => id === el.id)} 

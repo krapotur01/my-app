@@ -1,6 +1,6 @@
 import {connect} from 'react-redux';
-import Сorrespondence from './Сorrespondence.jsx';
-import { sendMessageAC, updateNewMessageBodyAC } from './../../../../../redux/correspondence-reducer';
+import Correspondence from './Correspondence.jsx';
+import { sendMessageAC, updateNewMessageBodyAC } from '../../../../../redux/correspondence-reducer';
 
 const mapStateToProps = (state) => {
     return {
@@ -19,6 +19,6 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-const СorrespondenceContainer = connect(mapStateToProps, mapDispatchToProps) (Сorrespondence);
+const CorrespondenceContainer = connect(mapStateToProps, mapDispatchToProps) (Correspondence);
 
-export default СorrespondenceContainer;
+export default CorrespondenceContainer;

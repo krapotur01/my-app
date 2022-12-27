@@ -1,37 +1,18 @@
 import React from 'react';
 import styles from './Profile.module.css';
-import PostItem from './PostItem/PostItem.jsx';
 import Preloader from './../../../common/Preloader/Preloader';
+import ProfileInfo from './ProfileInfo/ProfileInfo.jsx';
+import PostsContainer from './Posts/PostsContainer';
 
-const Profile = (props) => {
+const Profile = props => {
     if(!props.profile) {
         return <Preloader />
     }
 
-    const postRender = props.profileData.map(el => <PostItem id={el.id} key={el.id} likeCount={el.likeCount} text={el.text} />)
-
-    const onAddPostClick = () => {
-        props.addPost();
-    }
-
-    const onPostChange = (event) => {
-        let text = event.target.value;
-        props.updateNewPostText(text);
-    }
-
     return (  
         <div className={styles.posts_block}>
-            <div className="profileInfo">
-                <img src={props.profile.photos.large} alt="Аватар" className={styles.avatar} />
-                <p className="profileFullName">{props.profile.fullName}</p>
-            </div>
-            <div className={styles.textarea_block}>
-                <textarea onChange={onPostChange} placeholder='введите сообщение' value={props.newPostText} />
-                <button onClick={onAddPostClick} className={styles.button}>написать</button>
-            </div>
-            <section className={styles.posts}>
-                { postRender }
-            </section>
+            <ProfileInfo profile={props.profile} status={props.status} updateStatus={props.updateStatus} updateProfile={props.updateProfile} />
+            <PostsContainer />
         </div>
     )
 }
